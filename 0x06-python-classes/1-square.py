@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+
+
 """this modul contains Square class"""
 
 
@@ -34,5 +36,6 @@ class Square:
 
     """
 
-	def __init__(self, value):
-	   self.__size = value
+    def __init__(self, value):
+
+        self.__size = value
