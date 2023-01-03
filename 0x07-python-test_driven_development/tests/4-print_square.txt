@@ -1,0 +1,115 @@
+'''
+
+
+
+# Import the function
+
+>>> from importlib import import_module
+
+>>> print_square = import_module('4-print_square').print_square
+
+
+
+# Start testing for valid inputs(arguments)
+
+>>> print_square(4)
+
+####
+
+####
+
+####
+
+####
+
+
+
+>>> print_square(10)
+
+##########
+
+##########
+
+##########
+
+##########
+
+##########
+
+##########
+
+##########
+
+##########
+
+##########
+
+##########
+
+
+
+>>> print_square(0)
+
+<BLANKLINE>
+
+>>> print_square(1)
+
+#
+
+
+
+# Start testing for invalid argumnets
+
+>>> try:
+
+...    print_square(-13.45)
+
+... except TypeError as e:
+
+...    print(e)
+
+size must be an integer
+
+>>> try:
+
+...    print_square([12])
+
+... except TypeError as e:
+
+...    print(e)
+
+size must be an integer
+
+>>> try:
+
+...    print_square(-1)
+
+... except ValueError as e:
+
+...    print(e)
+
+size must be >= 0
+
+>>> try:
+
+...    print_square(2.0)
+
+... except TypeError as e:
+
+...    print(e)
+
+size must be an integer
+
+>>> try:
+
+...     print_square()
+
+... except Exception as e:
+
+...     print(e)
+
+print_square() missing 1 required positional argument: 'size'
+
+
+
+'''
