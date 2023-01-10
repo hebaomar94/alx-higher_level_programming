@@ -16,6 +16,5 @@ def from_json_string(my_str):
     Returns:
         any: An object corresponding to the given JSON string,
         otherwise an exception is thrown.
-
-     """
-     return json.loads(my_str)
+    """
+    return json.loads(my_str)
