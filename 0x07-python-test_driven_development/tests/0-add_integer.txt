@@ -1,0 +1,55 @@
+The 0-add_integer.txt
+
+=======================
+
+
+
+Using add_integer
+
+-----------------------
+
+
+
+This is an example text file which can be used to test add_integer.py module
+
+
+
+>>> from importlib import import_module
+
+>>> add_integer = import_module('0-add_integer').add_integer
+
+>>> print(add_integer(1, 2))
+
+3
+
+>>> print(add_integer(100, -2))
+
+98
+
+>>> print(add_integer(2))
+
+100
+
+>>> print(add_integer(100.3, -2))
+
+98
+
+>>> try:
+
+...    print(add_integer(4, "School"))
+
+... except Exception as e:
+
+...    print (e)
+
+b must be an integer
+
+>>> try:
+
+...   print(add_integer(None))
+
+... except Exception as e:
+
+...   print(e)
+
+a must be an integer
